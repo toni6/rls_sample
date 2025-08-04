@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Rollback script using postgres superuser
+# This ensures rollbacks have full privileges to modify schema
+
+echo "🔙 Rolling back migrations as postgres superuser..."
+
+DB_USER=postgres DB_PASSWORD=postgres mix ecto.rollback "$@"
+
+echo "✅ Rollback completed"

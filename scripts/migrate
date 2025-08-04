@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Migration script using postgres superuser
+# This ensures migrations have full privileges to modify schema
+
+echo "🔧 Running migrations as postgres superuser..."
+
+DB_USER=postgres DB_PASSWORD=postgres mix ecto.migrate "$@"
+
+echo "✅ Migration completed"
