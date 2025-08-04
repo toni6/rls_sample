@@ -59,7 +59,7 @@ IO.puts "John (#{john.company.name}) sees #{length(john_projects)} projects"
 IO.puts "Bob (#{bob.company.name}) sees #{length(bob_projects)} projects"
 ```
 
-## 📚 Documentation
+## 📚 Documentation (TODO)
 
 For comprehensive implementation details, architecture explanations, and advanced usage patterns, see this blog article:
 
@@ -80,6 +80,7 @@ mix test
 
 # Check code quality
 mix credo --strict
+```
 
 ---
 
